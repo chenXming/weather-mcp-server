@@ -1,0 +1,58 @@
+{
+  "name": "@chenxming/mcp-weather-server",
+  "version": "1.0.1",
+  "description": "全球天气MCP服务器，支持中国城市和全球天气查询 - Global Weather MCP Server with support for Chinese cities",
+  "main": "./build/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-weather": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc --watch",
+    "clean": "rm -rf build/",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "build/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp", 
+    "weather", 
+    "china", 
+    "global", 
+    "openweathermap", 
+    "nws", 
+    "model-context-protocol",
+    "claude",
+    "ai-tools",
+    "weather-api"
+  ],
+  "author": "chenxming <13716873821@163.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/mcp-weather-server.git"
+  },
+  "homepage": "https://github.com/your-username/mcp-weather-server#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/mcp-weather-server/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.3",
+    "zod": "^3.25.71"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {}
+}

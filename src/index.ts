@@ -6,7 +6,7 @@ import { z } from "zod";
 
 const NWS_API_BASE = "https://api.weather.gov";
 const OPENWEATHER_API_BASE = "https://api.openweathermap.org/data/2.5";
-const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY || "2c68b7013a7c2143eb0a5a6845e41b85";
+const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY || "";
 const USER_AGENT = "weather-app/1.0";
 
 // 创建 server instance

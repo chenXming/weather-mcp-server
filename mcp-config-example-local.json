@@ -4,7 +4,7 @@
       "command": "node",
       "args": ["/Users/chenxiaoming/Desktop/其他项目/MCP/weather/build/index.js"],
       "env": {
-        "OPENWEATHER_API_KEY": "2c68b7013a7c2143eb0a5a6845e41b85"
+        "OPENWEATHER_API_KEY": "your_api_key_here"
       }
     }
   }
